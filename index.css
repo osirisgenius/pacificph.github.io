@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root{
+  --myGray : #212529;
+  --myPrimary : #2370ff;
+  --mySecondary : #e077f5;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+
+/* NAVMENU */
+
+.navbar{
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+  box-shadow: 0px 0px 25px var(--mySecondary);
+}
+
+.navbar .navbar-nav{
+  margin: 0 20px;
+}
+
+/* DROP DOWN HOVER */
+.dropdown-item:hover{
+  background-color: var(--myGray);
+  color: white;
+}
+
+/* LOGO COLOR */
+.navbar .navbar-brand{
+  font-family: 'Poppins', sans-serif;
+  color: var(--mySecondary);
+}
+
+.t-span{
+  color: var(--myPrimary);
+}
+
+
+/* Landing Page */
+.bgpage{
+    background-image: url(/img/firstbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 93vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.ldpage-content{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  width: auto;
+}
+
+.game-logo img{
+  width: 100px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+/* PAGE TITLE */
+
+.pgtitle{
+    margin-left: 15px;
+    font-family: Neon80sRegular, Arial Narrow, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fee;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    line-height: 5rem;
+}
+
+.anim{
+  /* animation */
+  animation: pgtitle 2s ease infinite;
+  -moz-animation: pgtitle 2s ease infinite;
+  -webkit-animation: pgtitle 2s ease infinite;
+}
+
+@keyframes pgtitle {
+  0%,
+  100% {
+    text-shadow: 0 0 .5vw #0d6efd, 0 0 1.5vw #0d6efd, 0 0 5vw #0d6efd, 0 0 5vw #0d6efd, 0 0 .2vw #0d6efd;
+    color: #e077f5;
+  }
+  50% {
+    text-shadow: 0 0 1vw #e077f5, 0 0 3vw #e077f5, 0 0 10vw #e077f5, 0 0 10vw #e077f5, 0 0 .4vw #e077f5;
+    color: #0d6efd;
+  }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* FOOTER */
+.footer{
+  height: 7vh;
+  background-color: var(--myGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 25px var(--mySecondary);
+}
+.social-footer{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-item img{
+  width: 30px;
+  margin: 0 30px;
+}
+
+.footer-item img:hover{
+  transform: translate(0,-5px);
+  box-shadow: 0px 0px 25px var(--myPrimary);
+}
+
+
+
+/* DEV TOOL CSS */
+
+
+/******* MEDIA QUERIES *******/
+
+@media (max-width: 768px){
+
+  .pgtitle{
+    letter-spacing: 1.5rem;
+    line-height: 3.5rem;
+  }
+
+  .game-logo img{
+    width: 30%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+
+  /* LANDING PAGE */
+  .game-logo img{
+    width: 180px;
+  }
+}
+
+/* GENERAL FOR 0px upto 992px */
+
+@media (max-width: 992px){
+
+    /* NAVMENU */
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+  .dropdown-menu{
+    text-align: inherit;
+  }
+}
