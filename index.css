@@ -61,6 +61,10 @@ ul{
   color: var(--myPrimary);
 }
 
+.aspi{
+  line-height: 3rem;
+}
+
 
 /* Landing Page */
 .bgpage{
@@ -81,11 +85,48 @@ ul{
   width: auto;
 }
 
+.game-logo{
+  position: relative;
+}
+
 .game-logo img{
-  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px var(--mySecondary);
+  width: 160px;
   -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
+}
+
+.game-logo img:hover{
+  cursor: pointer;
+  width: 170px;
+  overflow: hidden;
+}
+
+.speech::after {
+  content: '';
+  border: 20px solid transparent;
+  border-right-color: #ffff;
+  border-left: 0;
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.speech {
+  position: absolute;
+  font-family: arial;
+  font-size: 1.1em;
+  background: #ffff;
+  color: var(--myGray);
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 400px;
+  top: 30%;
+  left: 62%;
+  animation: updown 1.1s ease infinite;
 }
 
 /* PAGE TITLE */
@@ -96,7 +137,6 @@ ul{
     font-weight: 700;
     font-size: 2.5rem;
     color: #fee;
-    text-transform: uppercase;
     letter-spacing: 2rem;
     line-height: 5rem;
 }
@@ -123,6 +163,19 @@ ul{
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes updown {
+  0% {
+    transform: translateX(-10%);
+  }
+
+  50% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(-10%);
+  }
+}
 
 /* FOOTER */
 .footer{
@@ -165,6 +218,15 @@ ul{
 
   .game-logo img{
     width: 30%;
+  }
+
+  .game-logo img:hover{
+    width: 32%;
+  }
+
+  .speech{
+    top: 30%;
+    left: 72%;
   }
 }
 
