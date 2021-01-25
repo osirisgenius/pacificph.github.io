@@ -142,12 +142,12 @@ ul{
 }
 
 .anim{
-  /* animation */
   animation: pgtitle 2s ease infinite;
   -moz-animation: pgtitle 2s ease infinite;
   -webkit-animation: pgtitle 2s ease infinite;
 }
 
+/* ANIMATIONS  */
 @keyframes pgtitle {
   0%,
   100% {
@@ -247,9 +247,12 @@ ul{
 
   .navbar-nav{
     text-align: center;
+    transform: translate3d(0,-50%);
+    height: 100vh;
   }
 
   .dropdown-menu{
     text-align: inherit;
   }
+
 }
