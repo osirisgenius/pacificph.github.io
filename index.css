@@ -3,7 +3,8 @@
 :root{
   --myGray : #212529;
   --myPrimary : #2370ff;
-  --mySecondary : #e077f5;
+  --mySecondary : #ca51e2;
+  --myButtons :  #601d9e;
 }
 
 body{
@@ -15,6 +16,21 @@ ul{
   list-style: none;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: var(--myButtons);
+  border-color: var(--myButtons);
+}
+
+.btn-outline-primary {
+  color: #ffff;
+  border-color: var(--myButtons);
+}
+
+.btn-primary:hover, .btn-outline-primary:hover{
+  color: #fff;
+  background-color: var(--mySecondary);
+}
 
 /* NAVMENU */
 
