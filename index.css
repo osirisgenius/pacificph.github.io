@@ -104,10 +104,10 @@ ul{
   overflow: hidden;
 }
 
-.speech::after {
+.clickme::after {
   content: '';
   border: 20px solid transparent;
-  border-right-color: #ffff;
+  border-right-color: var(--mySecondary);
   border-left: 0;
   position: absolute;
   left: -17px;
@@ -115,12 +115,12 @@ ul{
   margin-top: -20px;
 }
 
-.speech {
+.clickme {
   position: absolute;
   font-family: arial;
   font-size: 1.1em;
-  background: #ffff;
-  color: var(--myGray);
+  background: var(--mySecondary);
+  color: white;
   border-radius: 10px;
   padding: 10px;
   max-width: 400px;
@@ -224,7 +224,7 @@ ul{
     width: 32%;
   }
 
-  .speech{
+  .clickme{
     top: 30%;
     left: 72%;
   }
@@ -245,10 +245,24 @@ ul{
 
     /* NAVMENU */
 
+  .navbar .container{
+    max-width: 100%;
+  }
+
   .navbar-nav{
     text-align: center;
     transform: translate3d(0,-50%);
     height: 100vh;
+    justify-content: start;
+    padding-top:30px;
+  }
+
+  .nav-item{
+    padding: 20px;
+  }
+
+  .nav-item:hover{
+    background-image: linear-gradient(to right, var(--myPrimary), var(--mySecondary))
   }
 
   .dropdown-menu{
