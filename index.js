@@ -21,5 +21,7 @@ $(document).ready(function() {
     $("#sendmeWarn").click(function () {
     $(".text-warn").show(100)
     $(".arrowshow").show(1)
+    $(".footer-item").addClass("upanddown")
+    $(".footer").css('box-shadow', '0px -10px 5px var(--myPrimary)');
  });
  });

@@ -168,7 +168,7 @@ ul{
   max-width: 400px;
   top: 30%;
   left: 62%;
-  animation: updown 1.2s ease infinite;
+  animation: leftright 1.2s ease infinite;
 }
 
 
@@ -178,35 +178,7 @@ ul{
   -webkit-animation: pgtitle 2s ease infinite;
 }
 
-/* ANIMATIONS  */
-@keyframes pgtitle {
-  0%,
-  100% {
-    text-shadow: 0 0 .5vw #0d6efd, 0 0 1.5vw #0d6efd, 0 0 5vw #0d6efd, 0 0 5vw #0d6efd, 0 0 .2vw #0d6efd;
-    color: #e077f5;
-  }
-  50% {
-    text-shadow: 0 0 1vw #e077f5, 0 0 3vw #e077f5, 0 0 10vw #e077f5, 0 0 10vw #e077f5, 0 0 .4vw #e077f5;
-    color: #0d6efd;
-  }
-}
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-@keyframes updown {
-  0% {
-    transform: translateX(-10%);
-  }
-
-  50% {
-    transform: translateX(10%);
-  }
-
-  100% {
-    transform: translateX(-10%);
-  }
-}
 
 
 
@@ -280,12 +252,15 @@ ul{
 
 .arrowshow{
   position: absolute;
-  bottom: 70px;
+  bottom: 80px;
   right: 20px;
   width: 20px;
   height: 40px;
   background-color: var(--mySecondary);
   display: none;
+  animation: updown 0.5s ease infinite;
+  -moz-animation: updown 0.5s ease infinite;
+  -webkit-animation: updown 0.5s ease infinite;
 }
 
 .arrowshow::after {
@@ -299,7 +274,54 @@ ul{
   margin-bottom: -20px;
 }
 
+.straightline{
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
 
+
+
+
+/* ANIMATIONS  */
+.testanimation{
+  animation: testanim 10s ease-in  infinite;
+}
+
+.upanddown{
+  animation: updown 1s ease infinite;
+}
+
+@keyframes testanim {
+  0% {
+    background-color: var(--myGray);
+  }
+  100%{
+    background-color: var(--mySecondary);
+  }
+}
+
+@keyframes pgtitle {
+  0%,
+  100% {
+    text-shadow: 0 0 .5vw #0d6efd, 0 0 1.5vw #0d6efd, 0 0 5vw #0d6efd, 0 0 5vw #0d6efd, 0 0 .2vw #0d6efd;
+    color: #e077f5;
+  }
+  50% {
+    text-shadow: 0 0 1vw #e077f5, 0 0 3vw #e077f5, 0 0 10vw #e077f5, 0 0 10vw #e077f5, 0 0 .4vw #e077f5;
+    color: #0d6efd;
+  }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes leftright { 0% {transform: translateX(-10%);} 50% {transform: translateX(10%);}100% {transform: translateX(-10%);}}
+@keyframes updown  { 0% {transform: translateY(-15%);} 50% {transform: translateY(15%);}100% {transform: translateY(-15%);}}
 /******* MEDIA QUERIES *******/
 
 @media (max-width: 768px){
