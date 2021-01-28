@@ -10,6 +10,7 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -31,6 +32,8 @@ ul{
   color: #fff;
   background-color: var(--mySecondary);
 }
+
+/****************** DEFAULT DESIGN FOR NAVIGATION AND FOOTER***************** */
 
 /* NAVMENU */
 
@@ -65,8 +68,33 @@ ul{
   line-height: 3rem;
 }
 
+/* FOOTER */
+.footer{
+  height: 7vh;
+  background-color: var(--myGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 25px var(--mySecondary);
+}
+.social-footer{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-/* Landing Page */
+.footer-item img{
+  width: 30px;
+  margin: 0 30px;
+}
+
+.footer-item img:hover{
+  transform: translate(0,-5px);
+  box-shadow: 0px 0px 25px var(--myPrimary);
+}
+
+
+/******************************* LANDING PAGE ****************************/
 .bgpage{
     background-image: url(/img/firstbg.jpg);
     background-size: cover;
@@ -85,6 +113,19 @@ ul{
   width: auto;
 }
 
+/* PAGE TITLE */
+
+.pgtitle{
+  margin-left: 15px;
+  font-family: Neon80sRegular, Arial Narrow, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fee;
+  letter-spacing: 2rem;
+  line-height: 5rem;
+}
+
+/* CENTER ICON */
 .game-logo{
   position: relative;
 }
@@ -95,13 +136,14 @@ ul{
   width: 160px;
   -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+  animation:spin 3s linear infinite;
 }
 
 .game-logo img:hover{
   cursor: pointer;
   width: 170px;
   overflow: hidden;
+  box-shadow: 0px 0px 15px white;
 }
 
 .clickme::after {
@@ -126,20 +168,9 @@ ul{
   max-width: 400px;
   top: 30%;
   left: 62%;
-  animation: updown 1.1s ease infinite;
+  animation: updown 1.2s ease infinite;
 }
 
-/* PAGE TITLE */
-
-.pgtitle{
-    margin-left: 15px;
-    font-family: Neon80sRegular, Arial Narrow, sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: #fee;
-    letter-spacing: 2rem;
-    line-height: 5rem;
-}
 
 .anim{
   animation: pgtitle 2s ease infinite;
@@ -177,34 +208,96 @@ ul{
   }
 }
 
-/* FOOTER */
-.footer{
-  height: 7vh;
-  background-color: var(--myGray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 25px var(--mySecondary);
+
+
+
+
+/**************************** CONTACT PAGE ****************************/
+.ct-page{
+  background-color: rgba(51, 51, 51, 0.849);
+  width: 100vw;
+  height: 90vh;
+  margin-top: 76px; 
 }
-.social-footer{
+
+.contactintro{
+  color: white;
+  margin-top: 70px;
+}
+
+.contactintro p{
+  margin: 30px 0;
+  color: rgba(255,255,255,.55);
+  font-size: 0.9rem;
+}
+
+.contactintro span{
+  color: var(--mySecondary);
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
-  display: flex;
+  width: 300px;
 }
 
-.footer-item img{
-  width: 30px;
-  margin: 0 30px;
+.contact-in{
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  background-color: var(--myGray);
+}
+.contact-form button{
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 100px;
 }
 
-.footer-item img:hover{
-  transform: translate(0,-5px);
-  box-shadow: 0px 0px 25px var(--myPrimary);
+.text-warn{
+  position: relative;
+  margin-top: 10px;
+  padding: 5px 0;
+  width: 80%;
+  color: white;
+  font-size: 0.8rem;
+  background-color: red;
+  text-align: center;
+  border-radius: 20px;
+  display: none;
 }
 
+.text-warn::after {
+  content: '';
+  border: 10px solid transparent;
+  border-bottom-color: red;
+  border-top: 0;
+  position: absolute;
+  left:20px;
+  top: -10px;
+  margin-bottom: -20px;
+}
 
+.arrowshow{
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  width: 20px;
+  height: 40px;
+  background-color: var(--mySecondary);
+  display: none;
+}
 
-/* DEV TOOL CSS */
+.arrowshow::after {
+  content: '';
+  border: 20px solid transparent;
+  border-top-color: var(--mySecondary);
+  border-bottom: 0;
+  position: absolute;
+  right: -10px;
+  bottom:10px;
+  margin-bottom: -20px;
+}
 
 
 /******* MEDIA QUERIES *******/

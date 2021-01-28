@@ -15,3 +15,11 @@
 // }
 
 // insertGuest()
+
+
+$(document).ready(function() {
+    $("#sendmeWarn").click(function () {
+    $(".text-warn").show(100)
+    $(".arrowshow").show(1)
+ });
+ });
