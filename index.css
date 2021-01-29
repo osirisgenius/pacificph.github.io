@@ -188,8 +188,11 @@ ul{
 .ct-page{
   background-color: rgba(51, 51, 51, 0.849);
   width: 100vw;
-  height: 90vh;
-  margin-top: 76px; 
+  height: calc(100vh - 113px);
+  margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .contactintro{
