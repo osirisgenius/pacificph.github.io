@@ -22,6 +22,21 @@ $(document).ready(function() {
     $(".text-warn").show(100)
     $(".arrowshow").show(1)
     $(".footer-item").addClass("upanddown")
-    $(".footer").css('box-shadow', '0px -10px 5px var(--myPrimary)');
+    $(".footer").addClass("glowshadow")
  });
  });
+
+ $(document).ready(function() {
+    $(".game-logo").click(function () {
+    $(".ldpage-content").fadeOut(2000)
+    $(".lp-profile").fadeIn(5000)
+ });
+ });
+
+ $(document).ready(function() {
+    $(".p-exit").click(function () {
+    $(".ldpage-content").fadeIn(3000)
+    $(".lp-profile").fadeOut(1500)
+ });
+ });
+

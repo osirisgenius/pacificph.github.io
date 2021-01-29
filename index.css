@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+/* Default */
 :root{
   --myGray : #212529;
   --myPrimary : #2370ff;
@@ -15,6 +16,11 @@ body{
 
 ul{
   list-style: none;
+}
+
+a{
+  color: unset;
+  text-decoration: unset;
 }
 
 .btn-primary {
@@ -44,17 +50,37 @@ ul{
   box-shadow: 0px 0px 25px var(--mySecondary);
 }
 
-.navbar .navbar-nav{
-  margin: 0 20px;
+.navbar .container{
+  max-width: 100%;
 }
 
-/* DROP DOWN HOVER */
+.navbar-nav{
+  text-align: center;
+  height: 100vh;
+  justify-content: start;
+  margin-top:30px;
+}
+
+.nav-item{
+  padding: 20px 0px;
+}
+
+.nav-item:hover{
+  background-image: linear-gradient(to right, var(--myPrimary), var(--mySecondary))
+}
+
+/* DROP DOWN */
+
+.dropdown-menu{
+  text-align: inherit;
+}
+
 .dropdown-item:hover{
   background-color: var(--myGray);
   color: white;
 }
 
-/* LOGO COLOR */
+/* LOGO  */
 .navbar .navbar-brand{
   font-family: 'Poppins', sans-serif;
   color: var(--mySecondary);
@@ -97,6 +123,7 @@ ul{
 
 /******************************* LANDING PAGE ****************************/
 .bgpage{
+    position: relative;
     background-image: url(/img/firstbg.jpg);
     background-size: cover;
     background-position: center;
@@ -122,8 +149,8 @@ ul{
   font-weight: 700;
   font-size: 2.5rem;
   color: #fee;
-  letter-spacing: 2rem;
-  line-height: 5rem;
+  letter-spacing: 1.5rem;
+  line-height: 3.5rem;
 }
 
 /* CENTER ICON */
@@ -134,7 +161,7 @@ ul{
 .game-logo img{
   border-radius: 50%;
   box-shadow: 0px 0px 30px var(--mySecondary);
-  width: 160px;
+  width: 28%;
   -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
   animation:spin 3s linear infinite;
@@ -142,11 +169,12 @@ ul{
 
 .game-logo img:hover{
   cursor: pointer;
-  width: 170px;
+  width: 30%;
   overflow: hidden;
   box-shadow: 0px 0px 15px white;
 }
 
+/* Click Me */
 .clickme::after {
   content: '';
   border: 20px solid transparent;
@@ -168,14 +196,53 @@ ul{
   padding: 10px;
   max-width: 400px;
   top: 30%;
-  left: 62%;
+  left: 72%;
   animation: leftright 1.2s ease infinite;
 }
 
+/* HIDDEN content on Landing Page */
+/* Profile */
+.lp-profile{
+  position: absolute;
+  background-color: rgba(27, 27, 27, 0.616);
+  width: 90%;
+  display: none;
+}
 
+.profile-img{
+  padding: 20px;
+}
 
+.profile-img img{
+  width: 35%;
+}
 
+.pro-title{
+  margin: 0 20px;
+  color: white;
+}
 
+.persona{
+  margin: 20px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: disc;
+  text-align: left;
+  background-color: white;
+  font-size: 0.8rem;
+}
+
+.persona li{
+  padding: 5px 10px;
+  color: var(--myGray);
+}
+
+.p-exit{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
 
 
 
@@ -187,22 +254,22 @@ ul{
   width: 100vw;
   height: 100vh;
 }
-
+/* Contact Title */
 .contactintro{
   color: white;
-  margin-top: 150px;
+  margin-top: 120px;
 }
-
+/* Contact Paragraph */
 .contactintro p{
   margin: 30px 0;
   color: rgba(255,255,255,.55);
   font-size: 0.9rem;
 }
-
+/* Contact Highlight Email */
 .contactintro span{
   color: var(--mySecondary);
 }
-
+/* Contact FORM */
 .contact-form{
   display: flex;
   flex-direction: column;
@@ -216,17 +283,18 @@ ul{
   padding: 5px;
   background-color: var(--myGray);
 }
+
 .contact-form button{
   margin-top: 20px;
   margin-left: 10px;
   width: 100px;
 }
-
+/* Maintenance Warn */
 .text-warn{
   position: relative;
-  margin-top: 10px;
+  top: -95px;
   padding: 5px 0;
-  width: 80%;
+  width: 90%;
   color: white;
   font-size: 0.8rem;
   background-color: red;
@@ -238,11 +306,11 @@ ul{
 .text-warn::after {
   content: '';
   border: 10px solid transparent;
-  border-bottom-color: red;
-  border-top: 0;
+  border-top-color: red;
+  border-bottom: 0;
   position: absolute;
   left:20px;
-  top: -10px;
+  top: 45px;
   margin-bottom: -20px;
 }
 
@@ -271,15 +339,20 @@ ul{
 }
 
 
-/* ANIMATIONS  */
+/************************************ ANIMATIONS**************************/
+/* IM NINO glow */
 .glow{
   animation: pgtitle 2s ease infinite;
   -moz-animation: pgtitle 2s ease infinite;
   -webkit-animation: pgtitle 2s ease infinite;
 }
-
+/* alert arrow */
 .upanddown{
   animation: updown 1s ease infinite;
+}
+
+.glowshadow{
+  animation: glowshad 0.5s ease infinite;
 }
 
 @keyframes pgtitle {
@@ -299,66 +372,49 @@ ul{
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @keyframes leftright { 0% {transform: translateX(-10%);} 50% {transform: translateX(10%);}100% {transform: translateX(-10%);}}
 @keyframes updown  { 0% {transform: translateY(-15%);} 50% {transform: translateY(15%);}100% {transform: translateY(-15%);}}
-/******* MEDIA QUERIES *******/
+@keyframes glowshad {0% {  box-shadow: 0px 0px 25px white;} 100%{  box-shadow: 0px 0px 25px var(--myPrimary);}}
 
-@media (max-width: 768px){
-
-  .pgtitle{
-    letter-spacing: 1.5rem;
-    line-height: 3.5rem;
-  }
-
-  .game-logo img{
-    width: 30%;
-  }
-
-  .game-logo img:hover{
-    width: 32%;
-  }
-
-  .clickme{
-    top: 30%;
-    left: 72%;
-  }
-}
+/***********************************MEDIA QUERIES *************************/
 
 
 @media (min-width: 768px) and (max-width: 992px){
 
-  /* LANDING PAGE */
-  .game-logo img{
-    width: 180px;
-  }
 }
 
-/* GENERAL FOR 0px upto 992px */
+/* 992px upto possible */
 
-@media (max-width: 992px){
+@media (min-width: 992px){
 
     /* NAVMENU */
-
-  .navbar .container{
-    max-width: 100%;
-  }
-
   .navbar-nav{
-    text-align: center;
-    transform: translate3d(0,-50%);
-    height: 100vh;
-    justify-content: start;
-    padding-top:30px;
+    height: unset;
+    padding-top:unset;
+    margin: 0 20px;
   }
 
   .nav-item{
-    padding: 20px;
+    padding: 0 10px;
   }
 
   .nav-item:hover{
-    background-image: linear-gradient(to right, var(--myPrimary), var(--mySecondary))
+    border-radius: 20px;
   }
 
-  .dropdown-menu{
-    text-align: inherit;
+  .pgtitle{
+    letter-spacing: 2rem;
+    line-height: 5rem;
+  }
+
+  .game-logo img{
+    width: 18%;
+  }
+  
+  .game-logo img:hover{
+    width: 19%;
+  }
+
+  .clickme{
+    left: 62%;
   }
 
 }
