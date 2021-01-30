@@ -16,7 +16,7 @@
 
 // insertGuest()
 
-
+// ERROR For SEND BUTTON on Cotacts
 $(document).ready(function() {
     $("#sendmeWarn").click(function () {
     $(".text-warn").show(100)
@@ -26,17 +26,27 @@ $(document).ready(function() {
  });
  });
 
- $(document).ready(function() {
-    $(".game-logo").click(function () {
-    $(".ldpage-content").fadeOut(2000)
-    $(".lp-profile").fadeIn(5000)
- });
- });
 
+//  Profile Show Button
+ $(document).ready(function() {
+    $("#g-logo").click(function () {
+    $(".ldpage-content").fadeOut(1500)
+    $(".lp-profile").fadeIn(3000)
+
+ });
+ });
+// Profile Hide Button
  $(document).ready(function() {
     $(".p-exit").click(function () {
     $(".ldpage-content").fadeIn(3000)
     $(".lp-profile").fadeOut(1500)
  });
  });
+
+ // Website Show Button
+ $(document).ready(function() {
+   $("#website").click(function () {
+});
+});
+
 

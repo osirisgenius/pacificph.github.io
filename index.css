@@ -138,13 +138,11 @@ a{
   display: flex;
   justify-content: space-between;
   justify-items: center;
-  width: auto;
 }
 
 /* PAGE TITLE */
 
 .pgtitle{
-  margin-left: 15px;
   font-family: Neon80sRegular, Arial Narrow, sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -175,16 +173,6 @@ a{
 }
 
 /* Click Me */
-.clickme::after {
-  content: '';
-  border: 20px solid transparent;
-  border-right-color: var(--mySecondary);
-  border-left: 0;
-  position: absolute;
-  left: -17px;
-  top: 50%;
-  margin-top: -20px;
-}
 
 .clickme {
   position: absolute;
@@ -199,14 +187,26 @@ a{
   left: 72%;
   animation: leftright 1.2s ease infinite;
 }
+.clickme::after {
+  content: '';
+  border: 20px solid transparent;
+  border-right-color: var(--mySecondary);
+  border-left: 0;
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  margin-top: -20px;
+}
 
 /* HIDDEN content on Landing Page */
 /* Profile */
 .lp-profile{
   position: absolute;
-  background-color: rgba(27, 27, 27, 0.616);
+  background-color: rgba(66, 66, 66, 0.788);
   width: 90%;
+  margin-top: 55px;
   display: none;
+  box-shadow: 0px 0px 10px var(--mySecondary);
 }
 
 .profile-img{
@@ -214,7 +214,7 @@ a{
 }
 
 .profile-img img{
-  width: 35%;
+  width: 40%;
 }
 
 .pro-title{
@@ -223,13 +223,16 @@ a{
 }
 
 .persona{
+  /* spacing */
   margin: 20px 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  list-style-type: disc;
   text-align: left;
+  /* style */
+  list-style-type: disc;
   background-color: white;
   font-size: 0.8rem;
+  border-radius: 10px;
 }
 
 .persona li{
