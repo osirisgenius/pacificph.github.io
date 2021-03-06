@@ -386,12 +386,26 @@ input:focus{
 
 /* LARGE DEVICE IPAD to PC */
 @media (min-width: 768px){
-
+   
+    /* HIDE ON LARGE DEVICE */
+    .ordernow{
+        border-radius: 30px;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        background-color: var(--primCol);
+        color: white ;
+        margin: 0 15px;
+    }
+    /* NAVBAR */
+    .navbar-nav{
+        background-color: unset;
+    }
     /* LOGIN PAGE */
     .login img{
         width: 20%;
     }
     .social-media img{
-        width: 50px;
+        width: 20px;
     }
+
 }
