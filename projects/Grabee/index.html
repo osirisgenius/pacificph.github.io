@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GRABEE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="./img/favicon_io/favicon.ico"/>
+        <!-- Bootstrap and Custom CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Details and NAVBAR -->
+        <div class="mymenu position-fixed w-100">
+            <!-- Time -->
+            <div class="bsc-details  d-flex w-100 align-items-center" onscroll="hideMe()">
+                <img src="./img/smartphone.png" alt=""><span>+886  9238155421</span>
+                <img src="./img/clock.png" alt=""><span> Mon-Sun: 7AM - 10PM</span>
+            </div>
+            <!-- Main Menu -->
+            <nav class="navbar navbar-expand-lg navbar-dark zindex-tooltip">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                      <img src="./img/logo.jpg" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Promo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#ourMenu">Meals</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <button class="ordernow">Order Now!</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav> 
+        </div>
+        <!-- Landing Page -->
+        <div class="ldpage chicken-bg align-items-center">
+            <div class="welcome text-center">
+                <h1>Welcome to <span>GRABEE</span></h1>
+                <h3>Work Hard! Eat Harder!</h3>
+            </div>
+            <div class="ldbuttons">
+               <a href="#ourMenu"><button type="button" class="btn btn-warning">Our Menu</button></a> 
+               <a href=""> <button type="button" class="btn btn-outline-warning">Contact Us!</button></a> 
+            </div>
+            <div class="userlogin align-items-center justify-content-center">
+                <a href="/pages/login.html" class="d-flex w-25"><img src="./img/user.png" alt=""></a>
+            </div>
+            <p>Login or <a href=""><span>Register</span></a> to place your order</p>
+            <a href="#"><u>Forgot Password??</u></a>
+        </div>
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <div id="carouselExampleCaptions" class="carousel slide fadeup" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner fadeup">
+                  <div class="carousel-item active">
+                    <img src="./img/carousel/man-1.jpg" class="d-block w-50 m-auto" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Rick Chua</h5>
+                      <p><em>"It's my favorite restaurant. My friends and I are coming every payday."</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/carousel/toddler-eating2.jpg" class="d-block w-50 m-auto" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Amy Farah Cooper</h5>
+                      <p><em>"Our daughter loves the sphagetti so much. She finish one order by herself"</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/carousel/chef.jpg" class="d-block w-50    m-auto" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Chef Gordon</h5>
+                      <p><em>"I really like how they marinated the chicken. I highly recommend this restaurant."</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/carousel/chef.jpg" class="d-block w-50    m-auto" alt="...">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Juan Dela Cruz</h5>
+                      <p><em>"It is so delicious. I miss the Jolibee in the Philippines, number one."</em></p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <!-- MEALS -->
+        <section class="menu chicken-bg " id="ourMenu">
+            <div class="menuStart fadeup">
+              <h1>Our Meals</h1>
+            </div>
+            <div class="category fadeup">
+              <h4>2pc Chicken Combo Meals</h4>
+            </div>
+            <div class="menu-carousel fadeup">
+              <div id="carousel2pcsChicken" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card">
+                      <img src="./img/meals/2chicken-rice-coke-fries.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Combo 2CA</h5>
+                        <p>2 pcs chicken (leg and thigh part), 1 rice , 1 fries and 1 drink of your choice</p>
+                        <a href="#" class="btn btn-warning">$180.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="card">
+                      <img src="./img/meals/2chicken-onion-coke.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Combo 2CB</h5>
+                        <p>2 pcs chicken (leg and thigh part) , 1 onion rings and 1 drink of your choice</p>
+                        <a href="#" class="btn btn-warning">$195.59 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="card">
+                      <img src="./img/meals/2chicken-pop-coke.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Combo 2CC</h5>
+                        <p>2 pcs chicken (leg and thigh part) , 1 popcorn chicken and 1 drink of your choice</p>
+                        <a href="#" class="btn btn-warning">$174.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2pcsChicken" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2pcsChicken" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- 1 PC Chicken -->
+              <div class="category fadeup">
+                <h4>1pc Chicken Combo Meals</h4>
+              </div>
+              <div class="menu-carousel fadeup">
+                <div id="carousel1pcsChicken" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card">
+                        <img src="./img/meals/chicken-rice-fries-coke.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">COMBO 1CA</h5>
+                          <p>1pc chicken , 1 rice and 1 drink of your choice</p>
+                          <a href="#" class="btn btn-warning">$105.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <div class="card">
+                        <img src="./img/meals/chicken-pop-coke.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">COMBO 1CB</h5>
+                          <p>1pc chicken , 1 rice and 1 drink of your choice</p>
+                          <a href="#" class="btn btn-warning">$120.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <div class="card">
+                        <img src="./img/meals/chicken-onion-coke.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">COMBO 1CC</h5>
+                          <p>1pc chicken , 1 rice and 1 drink of your choice</p>
+                          <a href="#" class="btn btn-warning">$98.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel1pcsChicken" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel1pcsChicken" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Bucket and Others -->
+                <div class="category fadeup">
+                  <h4>Bucket and Alacartes</h4>
+                </div>
+                <div class="menu-carousel fadeup">
+                  <div id="carouselBucket" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card">
+                          <img src="./img/meals/chicken-8pcs.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">BUCKET 8A</h5>
+                            <p>8 pcs GRABEE Crispy Chicken. <br> "Family that eats together last forever."</p>
+                            <a href="#" class="btn btn-warning">$520.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="card">
+                          <img src="./img/meals/fries.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Fries</h5>
+                            <p>Regular French Fries <br> Upgrade to Large - <strong>$1.99</strong></p>
+                            <a href="#" class="btn btn-warning">$39.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="card">
+                          <img src="./img/meals/onion-rings.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Onion Rings</h5>
+                            <p>6 pcs appetizer onion rings dipped in our secret bread crumps mixture.</p>
+                            <a href="#" class="btn btn-warning">$44.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="card">
+                          <img src="./img/meals/popcorn chicken.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Popcorn Chicken</h5>
+                            <p>10pcs bite-size pieces of chicken that have been breaded and fried</p>
+                            <a href="#" class="btn btn-warning">$34.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="card">
+                          <img src="./img/meals/extra gravy.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Extra Gravy</h5>
+                            <p>Our pride Gravy that tastes like no other. It's a receipt from our ancestors.</p>
+                            <a href="#" class="btn btn-warning">$9.99 <img src="./img/shopping-cart.svg" class="add-to" alt=""></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBucket" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBucket" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+            
+            
+        </section>
+        <!-- GOOGLE MAPS -->
+        <section class="map-container">
+          <div class="g-map fadeup">
+              <h3>Address</h3>
+              <p>320, No. 638, Section 1, Zhongli Road, Zhongli District, Taoyuan City</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.90449664309!2d121.24796561537788!3d24.969363747032666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682385ef7894e7%3A0x9adb3697647883aa!2zR3JhYmVlIEZyaWVkIENoaWNrZW4g6LC35qiC5q-U54K46Zue!5e0!3m2!1szh-TW!2stw!4v1615044311857!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </section>
+
+        <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+    <!-- JQUERY -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <!-- Scroll Reveal -->
+    <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Custom Javascript -->
+    <script src="index.js"></script>
+    </body>
+</html>

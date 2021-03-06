@@ -1,0 +1,399 @@
+/* Default */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+/* variables */
+:root{
+    --primCol: rgb(255, 145, 0);
+    --sndColor : #212529 ;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
+.hideme{
+    visibility: hidden;
+}
+
+.chicken-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233),rgba(0, 0, 0, 0.562)), url(/img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* NAV MENU and SCHEDULE */
+
+.mymenu{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.308));;
+    z-index: 998 !important;
+}
+
+.bsc-details{
+    margin: 10px 0;
+    justify-content: center;
+    /* design */
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Open Sans", sans-serif;
+    /* background */
+
+    transition: all 0.5s;
+}
+
+/* Icon */
+.bsc-details img{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    color: var(--primCol);
+}
+
+.bsc-details span{
+    font: 5rem;
+    margin: 0 5px;
+}
+/* Nav Menu */
+.navbar{
+    background-color: #21252993;
+
+}
+
+.navbar-nav{
+    background-color: #212529da;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    background-color: var(--primCol);
+
+}
+
+.navbar-brand img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav-link{
+    padding: 1.5rem;
+    font-style: 1.2rem;
+}
+
+/* Menu Button */
+.ordernow{
+    border-radius: 30px;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    background-color: var(--primCol);
+    color: white ;
+    margin: 15px 0 40px 0;
+}
+
+/*** Landing Page ***/
+.ldpage{
+
+    /* background */
+    height: 100vh;
+    width: 100vw;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+.welcome{
+    margin-top: 100px;
+}
+
+.ldpage h1{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 56px;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.ldpage span{
+    color: var(--primCol);
+    font-weight: 1000;
+}
+
+.ldbuttons button{
+    margin: 20px 10px;
+}
+
+.userlogin{
+    overflow: hidden;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.userlogin img{
+    margin: auto;
+    width: 100%;
+    border: 3px solid var(--primCol);
+    border-radius: 50%;
+    cursor: pointer;
+    animation: enlarge 0.8s infinite;
+
+}
+
+.userlogin img:hover{
+    transform: scale(1.1);
+    border: 5px solid rgba(255, 208, 0, 0.479);
+}
+
+/***TESTIMONIALS ***/
+
+.testimonials{
+    height: 55%;
+    width: 100vw;
+    background-color: var(--sndColor);
+}
+
+.testimonials .carousel{
+    padding: 40px 0;
+
+}
+
+.testimonials .carousel-inner{
+    color: white;
+}
+
+.testimonials .carousel-item img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--primCol);
+}
+
+.testimonials .carousel-caption{
+    position: unset;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    border-radius: 50%;
+    border: 2px solid var(--primCol);
+}
+
+.testimonials .carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 8px;
+}
+
+.testimonials .carousel-indicators .active{
+    background-color: var(--primCol);
+}
+
+/*** MENU ***/
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.829)), url(/img/background.jpg);
+}
+
+.menuStart h1{
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu .category{
+    padding: 10px 15px;
+    text-align: center;
+    margin: 50px auto 10px auto;
+    border: 2px solid var(--primCol);
+    border-radius: 20px;
+}
+
+.menu .category h4{
+    font-size: 1rem;
+}
+
+.menu .carousel-inner{
+    margin: auto;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.menu .card{
+    border: unset;
+}
+
+.card-img-top{
+    height: 20%;
+}
+
+.menu .card-body{
+    background-color: var(--sndColor);
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+.card-body a{
+    font-weight: 700;
+}
+
+.card-body p{
+    font-size: 12px;
+}
+
+.add-to{
+    width: 20px;
+    animation: jump 0.5s infinite;
+}
+
+.menu .carousel-control-next-icon,.menu .carousel-control-prev-icon{
+    background-color: var(--sndColor);
+}
+
+/* GOOGLE MAP */
+#map {
+    height: 400px;
+    width: 100%;
+  }
+
+
+/* ANIMATION */
+@keyframes enlarge {
+    0%{ transform: scale(1);}
+    100%{ transform: scale(1.1);}
+}
+
+@keyframes jump{
+    0% { transform: translate(0,0);}
+    100% { transform: translate(0,-5px);}
+    0% { transform: translate(0,0);}
+}
+
+/************************END OF HOME PAGE********************************* */
+
+/* LOGIN PAGE */
+
+.login-container{
+    background-color: var(--sndColor);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login img{
+    width: 30%;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login input{
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    width: 170%;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+input:focus{
+    background-color: var(--primCol);
+    color: white;
+
+}
+
+.login-btn{
+    margin: 20px 0;
+}
+
+.signup{
+    color: var(--primCol);
+}
+
+.social-media{
+    text-align: center;
+}
+.social-media img{
+    width: 10%;
+    margin: 15px;
+}
+
+
+/* GOOGLEMAP */
+
+.map-container{
+    background-color: var(--sndColor);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.g-map{
+    margin: 10px 0;
+}
+
+.g-map p{
+    font-size: 0.75rem;
+}
+
+.g-map iframe{
+    width: 90%;
+    height: 300px;
+    border-radius: 30px;
+    border: 10px solid red;
+}
+/* MEDIA QUERIES */
+
+/* LARGE DEVICE IPAD to PC */
+@media (min-width: 768px){
+
+    /* LOGIN PAGE */
+    .login img{
+        width: 20%;
+    }
+    .social-media img{
+        width: 50px;
+    }
+}
