@@ -409,15 +409,11 @@ a{
   }
 
   .game-logo img{
-    width: 18%;
+    width: 35%;
   }
   
   .game-logo img:hover{
     width: 19%;
-  }
-
-  .clickme{
-    left: 62%;
   }
 
 }
