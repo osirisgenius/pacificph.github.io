@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* Default */
 :root{
   --myGray : #212529;
@@ -143,7 +143,7 @@ a{
 /* PAGE TITLE */
 
 .pgtitle{
-  font-family: Neon80sRegular, Arial Narrow, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-weight: 700;
   font-size: 2.5rem;
   color: #fee;
