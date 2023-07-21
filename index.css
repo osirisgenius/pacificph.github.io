@@ -203,18 +203,18 @@ a{
 .lp-profile{
   position: absolute;
   background-color: rgba(66, 66, 66, 0.788);
-  width: 90%;
+  width: 85vw;
   margin-top: 55px;
   display: none;
   box-shadow: 0px 0px 10px var(--mySecondary);
 }
 
 .profile-img{
-  padding: 20px;
+  padding: 10px;
 }
 
 .profile-img img{
-  width: 40%;
+  width: 30%;
 }
 
 .pro-title{
@@ -409,15 +409,19 @@ a{
   }
 
   .game-logo img{
-    width: 18%;
+    width: 27%;
   }
   
   .game-logo img:hover{
-    width: 19%;
+    width: 28%;
   }
 
   .clickme{
     left: 62%;
+  }
+
+  .lp-profile{
+    width: 450px;
   }
 
 }

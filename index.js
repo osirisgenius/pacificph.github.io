@@ -16,7 +16,7 @@
 
 // insertGuest()
 
-// ERROR For SEND BUTTON on Cotacts
+// ERROR For SEND BUTTON on Contacts
 $(document).ready(function() {
     $("#sendmeWarn").click(function () {
     $(".text-warn").show(100)
