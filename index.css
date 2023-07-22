@@ -404,16 +404,17 @@ a{
   }
 
   .pgtitle{
-    letter-spacing: 2rem;
+    letter-spacing: 1.5rem;
     line-height: 5rem;
+    font-weight: bold;
   }
 
   .game-logo img{
-    width: 27%;
+    width: 22%;
   }
   
   .game-logo img:hover{
-    width: 28%;
+    width: 23%;
   }
 
   .clickme{
