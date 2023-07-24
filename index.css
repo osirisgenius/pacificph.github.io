@@ -203,7 +203,7 @@ a{
 .lp-profile{
   position: absolute;
   background-color: rgba(66, 66, 66, 0.788);
-  height: calc(100vh - 200px) !important;
+height: 500px;
   width: 90vw;
   margin-top: 30px;
   border-radius: 20px;
