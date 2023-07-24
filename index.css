@@ -203,8 +203,9 @@ a{
 .lp-profile{
   position: absolute;
   background-color: rgba(66, 66, 66, 0.788);
+  height: 82%;
   width: 85vw;
-  margin-top: 40px;
+  margin-top: 30px;
   border-radius: 20px;
   display: none;
   box-shadow: 0px 0px 10px var(--mySecondary);
@@ -212,7 +213,7 @@ a{
 
 .profile-img{
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .profile-img img{
@@ -226,14 +227,14 @@ a{
 
 .persona{
   /* spacing */
-  margin: 20px 0;
+  margin: 10px 0;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: left;
   /* style */
   list-style-type: disc;
   background-color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border-radius: 10px;
 }
 
@@ -424,6 +425,7 @@ a{
   }
 
   .lp-profile{
+    margin-top: 40px;
     width: 450px;
   }
 
