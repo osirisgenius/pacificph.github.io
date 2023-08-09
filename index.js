@@ -49,4 +49,12 @@ $(document).ready(function() {
 });
 });
 
+// Profile Hide Button
+$(document).ready(function() {
+   $(".p-exit").click(function () {
+   $(".ldpage-content").fadeIn(3000)
+   $(".lp-profile").fadeOut(1500)
+});
+});
+
 
