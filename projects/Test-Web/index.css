@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+/* Navbar modification */
+
+.nav-item:hover {
+    background-color: #004368;
+    border-radius: 20px;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.prime-color {
+    color: #004368;
+}
+
+.client-login {
+    position: absolute;
+    padding: 8px 15px;
+    right: 10%;
+    text-decoration: underline;
+}
+
+.client-login:hover {
+    background-color: #004368;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Elipse */
+
+.elipse img {
+    position: absolute;
+    top: -350px;
+    right: 0px;
+    max-width: 65%;
+    z-index: -99;
+}
+
+/* Main Phrase */
+
+.main-phrase {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.practice-owner-button {
+    color: white;
+    background-color: #4FBC45;
+    border-radius: 10px;
+}
+
+.practice-owner-button:hover {
+    background-color: #60a85b;
+}
+
+.physio-button {
+    color: #4FBC45;
+    border-radius: 10px;
+    border-color: #4FBC45;
+    border-style: solid;
+}
+
+.physio-button:hover {
+    background-color: #4FBC45;
+    color: white;
+}
+
+/* Clinic */
+
+.clinic-content {
+    position: absolute;
+    bottom: 13.5%;
+    left: 43%;
+}
+
+.clinic-clients {
+    position: absolute;
+    bottom: 2%;
+}
+
+.wh-13 {
+    width: 13%;
+    height: 13%;
+}
+
+.wh-20 {
+    width: 17%;
+    height: 17%;
+}
+
+.wh-50 {
+    width: 45%;
+    height: 45%;
+}
+
+.w7-h4 {
+    width: 70%;
+    height: 45%;
+}
+
+.wh-80 {
+    width: 60%;
+    height: 60%;
+}
+
+/* Corporate picture */
+
+.corpo-main {
+    position: absolute;
+    z-index: 98;
+    right: 18%;
+    top: 3%;
+}
+
+.corpo-right {
+    margin-top: 30px;
+}
+
+.corpo-image1 {
+    z-index: 99;
+}
+
+.shadow-1 {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    margin-top: -10px;
+}
+
+.shadow-2 {
+    position: absolute;
+    bottom: 19%;
+    left: 57%;
+    height: 60%;
+    z-index: -1;
+    margin-top: -10px;
+}
+
+.shadow-3 {
+    position: absolute;
+    right: -19%;
+    height: 35%;
+    z-index: -1;
+    margin-top: 0px;
+}
+
+.corpo-image3 {
+
+    width: 140%;
+    height: 65%;
+    margin-top: -110px;
+    margin-left: -70px;
+}
+
+/* Chat icon */
+
+.chat-icon {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.chat-icon img {
+    position: relative;
+    bottom: 5%;
+    right: -300px;
+    width: 30%;
+}
+
+.chat-icon img:hover{
+    width: 31%;
+}
+
+.chat-support{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom:-5px;
+    position: relative;
+    right: -300px;
+    width: 30%; 
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1420px) and (orientation:landscape) {
+    .elipse img {
+        max-width: 70%;
+    }
+}
