@@ -10,14 +10,26 @@ const io = new Server(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/server.html');
+    res.sendFile(__dirname + '/public/client.html');
 });
 
+app.get('/admin', (req, res) => {
+  res.sendFile(__dirname + '/public/admin.html');
+});
 
+// Connection Log
 io.on('connection', (socket) => {
     console.log('a user connected');
     socket.on('disconnect', () => {
       console.log('user disconnected');
+    });
+  });
+
+  // Emit Message
+  io.on('connection', (socket) => {
+    socket.on('chat message', (msg) => {
+      console.log('message: ' + msg);
+      io.emit('chat message', msg);
     });
   });
 

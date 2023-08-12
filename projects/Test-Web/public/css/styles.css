@@ -6,12 +6,6 @@ body {
     min-width: 100%;
 }
 
-
-.input-group-fill {
-    display: flex;
-    width: 100%;
-}
-
-.input-group-fill input {
-    flex-grow: 1;
+li{
+    list-style: none;
 }

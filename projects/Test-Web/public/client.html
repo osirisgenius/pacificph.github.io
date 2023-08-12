@@ -16,20 +16,21 @@
     <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh;">
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Re-open Chatbox
-          </button>
-          <span class="my-3 text-light">OR</span>
-          <a href="https://niniomagampon.github.io/projects/Test-Web/index.html"><button type="button" class="btn btn-warning">
-            Go Back
-          </button></a>
+        </button>
+        <span class="my-3 text-light">OR</span>
+        <a href="https://niniomagampon.github.io/projects/Test-Web/index.html"><button type="button"
+                class="btn btn-warning">
+                Go Back
+            </button></a>
     </div>
     <container>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header bg-success text-light">
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-headset"></i> Chat Support
-                        </h1>
+                        </h1><p class="ms-4" id="usertype">Guest</p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -40,11 +41,12 @@
                     <div class="modal-footer">
                         <div class="mb-3 w-100">
                             <form id="form" action="" class="d-flex">
-                            <input id="input" type="text" class="form-control w-100" autocomplete="off"
-                                placeholder="Enter Message" aria-label="Enter Message" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                    class="bi bi-send-fill"></i></button>
-                                </form>
+                                <input id="input" type="text" class="form-control w-100" autocomplete="off"
+                                    placeholder="Enter Message" aria-label="Enter Message"
+                                    aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
+                                        class="bi bi-send-fill"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -62,20 +64,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
-
-        var form = document.getElementById('form');
-        var input = document.getElementById('input');
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (input.value) {
-                socket.emit('chat message', input.value);
-                input.value = '';
-            }
-        });
-    </script>
+    <script src="/client.js"></script>
 </body>
 
 </html>
