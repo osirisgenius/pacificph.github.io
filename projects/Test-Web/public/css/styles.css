@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(53, 79, 62);
+}
+
+.chatInput {
+    min-width: 100%;
+}
+
+
+.input-group-fill {
+    display: flex;
+    width: 100%;
+}
+
+.input-group-fill input {
+    flex-grow: 1;
+}
