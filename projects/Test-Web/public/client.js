@@ -6,7 +6,6 @@ var usertype = document.getElementById('')
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    console.log("Submitted")
     if (input.value) {
         socket.emit('send-chat-message', input.value);
         input.value = '';
