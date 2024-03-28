@@ -1,0 +1,71 @@
+@import url(./customize.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* NAVBAR Content */
+.c-logo{
+    width: 250px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+nav ul li {
+    margin: 0 40px;
+    font-size: 1.2rem;
+}
+
+/* LAYER 1 */
+
+video{
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.layer-1 {
+    height: 90vh;
+    background-image: url(../img/people-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.layer-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.727); /* Adjust the alpha value for transparency (0 to 1) */
+    z-index: 1;
+}
+
+.layer-1 .container {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.layer-1-content1 {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white; /* Ensure text is visible against the background */
+}
+
+.contact-flag-container {
+    position: relative;
+    z-index: 4; /* Adjust as needed */
+    text-align: center;
+    color: white; /* Ensure text is visible against the background */
+}
+
+.flag-icon{
+    width: 30px;
+}
+
+.contact-btn{
+    border-radius:15px;
+}

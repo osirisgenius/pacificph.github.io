@@ -2,7 +2,6 @@ var socket = io();
 
 var form = document.getElementById('form');
 var input = document.getElementById('input');
-var usertype = document.getElementById('')
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
