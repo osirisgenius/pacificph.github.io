@@ -8,3 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
         this.play();
     });
 });
+
+// Slideshow
+

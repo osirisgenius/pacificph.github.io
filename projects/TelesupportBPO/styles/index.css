@@ -1,8 +1,9 @@
-@import url(./customize.css);
+@import url(./default.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url(./animations.css);
 
 /* NAVBAR Content */
-.c-logo{
+.c-logo {
     width: 250px;
 }
 
@@ -12,23 +13,39 @@
 
 nav ul li {
     margin: 0 40px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+nav ul li:hover {
+    background-color: #aae23c;
+    border-radius: 5px;
+}
+
+.contact-li:hover {
+    background-color: unset;
+    animation: unset;
 }
 
 /* LAYER 1 */
 
-video{
-    border: 2px solid #ccc; /* Border color */
-    border-radius: 10px; /* Border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+video {
+    border: 2px solid #ccc;
+    /* Border color */
+    border-radius: 10px;
+    /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
 }
 
 .layer-1 {
     height: 90vh;
+    width: 100%;
     background-image: url(../img/people-image.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
 
 .layer-1::before {
@@ -38,7 +55,8 @@ video{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.727); /* Adjust the alpha value for transparency (0 to 1) */
+    background-color: rgba(0, 0, 0, 0.727);
+    /* Adjust the alpha value for transparency (0 to 1) */
     z-index: 1;
 }
 
@@ -52,20 +70,132 @@ video{
     position: relative;
     z-index: 3;
     text-align: center;
-    color: white; /* Ensure text is visible against the background */
+    color: white;
+    /* Ensure text is visible against the background */
 }
 
 .contact-flag-container {
     position: relative;
-    z-index: 4; /* Adjust as needed */
+    z-index: 4;
+    /* Adjust as needed */
     text-align: center;
-    color: white; /* Ensure text is visible against the background */
+    color: white;
+    /* Ensure text is visible against the background */
 }
 
-.flag-icon{
+.flag-icon {
     width: 30px;
 }
 
-.contact-btn{
-    border-radius:15px;
+.contact-btn {
+    border-radius: 5px;
+    animation: telephone 1.5s infinite alternate;
 }
+
+
+/* Layer 2 */
+
+.layer-2 {
+    background-color: #eeeeee;
+    height: 100%;
+}
+
+
+.our-services {
+    display: inline-block;
+    overflow: hidden;
+    /* Hide overflowing text during animation */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    border-right: .15em solid orange;
+    /* Simulate cursor */
+    animation: typing 5s steps(40, end) infinite;
+}
+
+
+.service-container {
+    padding: 0;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .7);
+    height: 70vh;
+    width: 80vw;
+}
+
+
+
+.service-container table{
+    margin: 20px 30px;
+}
+
+.service-container .layer-2-1 table tr td{
+    padding: 20px 15px;
+    color: rgb(85, 85, 85);
+}
+
+/* CALL CENTER SERVICE */
+.layer-2-1{
+    padding: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.layer-2-1 .check-icon{
+    font-size: 45px;
+    color: #aae23c;
+}
+
+/* VIRTUAL ASSINTANT SERVICE  */
+.layer-2-2{
+    padding: 0;
+    background-color: #547b05;
+    height: 100%;
+    width: 50%;
+    color: white;
+}
+
+.service-container .layer-2-2 table tr td{
+    padding: 20px 15px;
+    color: rgb(225, 225, 225);
+}
+
+.layer-2-2 .check-icon{
+    font-size: 45px;
+    color: white;
+}
+
+
+/*  LAYER 3 */
+
+.layer-3{
+    padding: 0 ;
+    height: 50vh;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* Adjust the max-width as needed */
+    margin: 30px 0;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    width: fit-content;
+    animation: slideAnimation 100s linear infinite; /* Adjust duration for slower movement */
+  }
+
+  .slide img {
+    width: calc(100% / 6); /* Display three images at a time */
+    flex-shrink: 0;
+    padding: 0 40px;
+    border-radius: 50%;
+  }
+  
+
+  @keyframes slideAnimation {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(calc(-100% * 1)); /* Adjust based on the number of images */
+    }
+  }

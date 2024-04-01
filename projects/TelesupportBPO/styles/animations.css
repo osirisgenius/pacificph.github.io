@@ -1,0 +1,19 @@
+@keyframes telephone {
+    0%, 100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50% {width: 18%;}
+    60% {width: 18%;}
+    70% {width: 18%;}
+    80% {width: 18%;}
+    90% {width: 10%; opacity: 1;}
+    95% {width: 0%; opacity: 0.5;}
+    100% { width: 0%; opacity: 0;}
+}
