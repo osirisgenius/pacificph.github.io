@@ -1,0 +1,37 @@
+/*************************************PC BELOW***********************  */
+
+/* Nav */
+
+@media (max-width: 991.98px) { 
+    .navbar-brand{
+        margin: 0 !important;
+    }
+
+    nav ul li {
+        margin: 0 !important;
+        font-size: 1.5rem;
+        padding: unset !important;
+    }
+    nav ul li a{
+        margin: 10px;
+    }
+
+ }
+
+ /* LAYER 1 */
+
+
+/***************************************** PORTRAIT/PHONES ************************/
+ @media (max-width: 575.98px) {
+
+    .mylayer-1video {
+        height:30vh !important;
+        width: 95vw !important;
+        border: unset !important;
+    }
+
+    .hide-inmob{
+    visibility: visible !important;
+    }
+
+ }

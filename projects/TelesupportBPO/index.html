@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="#">
+                <a class="navbar-brand" href="#">
                     <img class="c-logo" src="../TelesupportBPO/img/company-logo.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -24,7 +24,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                    <ul class="navbar-nav mb-4 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav mb-4 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 600px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -55,11 +55,12 @@
     <div class="layer-1">
         <div class="container text-center">
             <div class="row align-items-center h-100">
-                <div class="col">
+                <div class="col hide-inmob text-white">
+                    TEST
                 </div>
                 <div class="col">
                     <div class="mb-4">
-                        <video src="./video/videoclip4k.mp4" id="myVideo" height="300px" width="535px" type="mp4"
+                        <video class="mylayer-1video" src="./video/videoclip4k.mp4" id="myVideo"  type="mp4"
                             autoplay muted>
                         </video>
                     </div>
@@ -91,16 +92,23 @@
             </div>
         </div>
     </div>
-
     <!-- SECOND LAYER -->
     <div class="layer-2 py-4">
+        <div class="row d-flex flex-column align-items-center justify-content-center text-center">
+            <p class="our-customers display-3 fw-bolder p-0">ABOUT US</p>
+
+
+        </div>
+    </div>
+    <!-- THIRD LAYER -->
+    <div class="layer-3 py-4">
         <div class="row d-flex flex-column align-items-center justify-content-center text-center">
             <p class="our-services display-4 fw-bolder">Our Services</p>
             <p class="h5 text-gray">Providing responsive, accurate, and consistent service with a <span
                     class="text-first h4">PEOPLE-FIRST</span> <br>culture that ensures the best agent to support your
                 sales, business, and virtual support needs.</p>
             <div class="row service-container align-items-center m-3 mt-4">
-                <div class="col layer-2-1">
+                <div class="col layer-3-1">
                     <p class="call-center-service mt-4 h2">
                         Call Center Services
                     </p>
@@ -133,7 +141,7 @@
                     </table>
 
                 </div>
-                <div class="col layer-2-2">
+                <div class="col layer-3-2">
                     <p class="call-center-service mt-4 h2">
                         <!-- Virtual Assitants Service AREA -->
                         Virtual Assistants Services
@@ -170,8 +178,8 @@
             </div>
         </div>
     </div>
-
-    <div class="layer-3 py-5">
+    <!-- FOURTH LAYER -->
+    <div class="layer-4 py-5">
         <div class="row d-flex flex-column align-items-center justify-content-center text-center">
             <p class="our-customers display-3 fw-bolder p-0">Our Clients</p>
             <!-- Enter clients here -->
@@ -194,9 +202,9 @@
                     <!-- Add more images as needed -->
                 </div>
             </div>
-            
+
         </div>
-    </div> 
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
