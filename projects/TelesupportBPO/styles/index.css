@@ -33,7 +33,14 @@ nav ul li:hover {
     animation: unset;
 }
 
-/* LAYER 1 */
+/* GENERIC LAYER */
+
+.layer-title{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+/****************************************************** LAYER 1 ***********************************************/
 
 .mylayer-1video {
     height:300px;
@@ -102,15 +109,33 @@ nav ul li:hover {
 
 /*********************************************** Layer 2 ********************************************************/
 
-.layer-2{
-    height: 50vh;
+
+.aboutus-icon{
+    /* Structure */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
+.aboutus-icon img{
+    height: 120px;
+    margin: 20px;
+}
+
+.aboutus-icon .info{
+    font-size: 1.1rem;
+    font-family: Poppins;
+    width: 85%;
+}
+
+
 
 /*********************************************** Layer 3 ********************************************************/
 
 .layer-3 {
     background-color: #eeeeee;
-    height: 100%;
 }
 
 
@@ -129,7 +154,6 @@ nav ul li:hover {
 .service-container {
     padding: 0;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, .7);
-    height: 70vh;
     width: 80vw;
 }
 
@@ -137,23 +161,23 @@ nav ul li:hover {
 
 .service-container table{
     margin: 20px 30px;
+    font-family: Poppins;
+    font-size: 1rem;
 }
 
 .service-container .layer-3-1 table tr td{
     padding: 20px 15px;
-    color: rgb(85, 85, 85);
 }
 
 /* CALL CENTER SERVICE */
 .layer-3-1{
     padding: 0;
     height: 100%;
-    width: 50%;
 }
 
 .layer-3-1 .check-icon{
-    font-size: 45px;
-    color: #aae23c;
+    font-size: 40px;
+    color: #547b05;
 }
 
 /* VIRTUAL ASSINTANT SERVICE  */
@@ -161,27 +185,20 @@ nav ul li:hover {
     padding: 0;
     background-color: #547b05;
     height: 100%;
-    width: 50%;
     color: white;
 }
 
 .service-container .layer-3-2 table tr td{
     padding: 20px 15px;
-    color: rgb(225, 225, 225);
 }
 
 .layer-3-2 .check-icon{
-    font-size: 45px;
+    font-size: 40px;
     color: white;
 }
 
 
 /*********************************************** Layer 4 ********************************************************/
-
-.layer-4{
-    padding: 0 ;
-    height: 50vh;
-}
 
 .slideshow-container {
     position: relative;
