@@ -33,11 +33,16 @@ nav ul li:hover {
     animation: unset;
 }
 
-/* GENERIC LAYER */
+/*************************** LAYER MAIN ******************************/
 
 .layer-title{
     font-size: 3.5rem;
     font-weight: bolder;
+}
+
+.layer-desc{
+    font-size: 1.5rem;
+    padding: 0 50px;
 }
 
 /****************************************************** LAYER 1 ***********************************************/
@@ -109,6 +114,9 @@ nav ul li:hover {
 
 /*********************************************** Layer 2 ********************************************************/
 
+.aboutus-container{
+    margin: 0 50px 50px 50px;
+}
 
 .aboutus-icon{
     /* Structure */
@@ -150,6 +158,10 @@ nav ul li:hover {
     animation: typing 5s steps(40, end) infinite;
 }
 
+.layer-desc p{
+    font-size: 1.5rem;
+}
+
 
 .service-container {
     padding: 0;
@@ -165,7 +177,7 @@ nav ul li:hover {
     font-size: 1rem;
 }
 
-.service-container .layer-3-1 table tr td{
+.service-container .layer-3-1 table tr td {
     padding: 20px 15px;
 }
 

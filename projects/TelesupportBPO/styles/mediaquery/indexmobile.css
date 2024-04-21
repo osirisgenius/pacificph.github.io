@@ -2,8 +2,8 @@
 
 /* Nav */
 
-@media (max-width: 991.98px) { 
-    .navbar-brand{
+@media (max-width: 991.98px) {
+    .navbar-brand {
         margin: 0 !important;
     }
 
@@ -12,26 +12,94 @@
         font-size: 1.5rem;
         padding: unset !important;
     }
-    nav ul li a{
+
+    nav ul li a {
         margin: 10px;
     }
 
- }
+}
 
- /* LAYER 1 */
+/* LAYER 1 */
 
 
 /***************************************** PORTRAIT/PHONES ************************/
- @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
+    .show-inmob {
+        visibility: visible !important;
+    }
+
+    .hide-inmob {
+        display: none !important;
+    }
+
+    .layer-title{
+        font-size: 2.5rem !important;
+    }
+
+    .layer-desc{
+        font-size: 1.2rem !important;
+    }
 
     .mylayer-1video {
-        height:30vh !important;
+        height: 30vh !important;
         width: 95vw !important;
         border: unset !important;
     }
 
-    .hide-inmob{
-    visibility: visible !important;
+    .aboutus-icon img{
+        height: 90px !important;
+        margin: 10px !important;
     }
 
- }
+    .aboutus-icon .info {
+        font-size: 0.9rem !important;
+    }
+
+    .our-services-desc p {
+        font-size: 1.2rem !important;
+    }
+
+    .layer-3-1 .check-icon, .layer-3-2 .check-icon{
+        font-size: 30px !important;
+    }
+
+    .layer-3-1, .layer-3-2 {
+        padding-bottom: 20px !important;
+    }
+    /**** LAYER 4 ****/
+    .slideshow-container {
+        margin: 10px 0 !important;
+    }
+
+    .slide img {
+        width: calc(100% / 5) !important;
+      }
+
+}
+
+/******************************************TABLETS BELOW *********************************  */
+
+@media (max-width: 768px) {
+
+    .aboutus-icon .info {
+        width: unset !important;
+    }
+
+    .aboutus-container {
+        margin: 0 !important;
+    }
+
+    .service-container {
+        width: 90vw !important;
+        border-radius: 10px;
+    }
+
+    .service-container table {
+        margin: unset !important;
+        font-size: 0.85rem !important;
+    }
+
+    .service-container .layer-3-1 table tr td ,service-container .layer-3-2 table tr td {
+        padding: 10px 10px !important;
+    }
+}
