@@ -177,14 +177,14 @@ nav ul li:hover {
     font-size: 1rem;
 }
 
-.service-container .layer-3-1 table tr td {
+.service-container .layer-3-1 table tr td,.service-container .layer-3-2 table tr td {
     padding: 20px 15px;
+    text-align: left;
 }
 
 /* CALL CENTER SERVICE */
 .layer-3-1{
     padding: 0;
-    height: 100%;
 }
 
 .layer-3-1 .check-icon{
@@ -195,13 +195,9 @@ nav ul li:hover {
 /* VIRTUAL ASSINTANT SERVICE  */
 .layer-3-2{
     padding: 0;
-    background-color: #547b05;
-    height: 100%;
+    background-color: #456604;
     color: white;
-}
-
-.service-container .layer-3-2 table tr td{
-    padding: 20px 15px;
+    min-height: 711px;
 }
 
 .layer-3-2 .check-icon{

@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="../TelesupportBPO/img/company-icon.png">
     <link rel="stylesheet" href="../TelesupportBPO/styles/index.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -43,8 +44,9 @@
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item contact-li">
-                            <a class="nav-link bg-first contact-btn fw-bolder" href="#"><i
-                                    class="tpicon bi bi-telephone mx-2"></i>Contact Us</a>
+                            <a class="nav-link bg-first contact-btn fw-bolder" href="#" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"><i class="tpicon bi bi-telephone mx-2"></i>Contact
+                                Us</a>
                         </li>
                     </ul>
                 </div>
@@ -139,32 +141,52 @@
                     <table>
                         <tr>
                             <td><i class="check-icon bi bi-check-circle-fill"></i></td>
-                            <td>
-                                Trained agents handling inbound and outbound calls, providing
+                            <td class="text-left">
+                                <span class="fw-bolder">Trained agents: </span> handling inbound and outbound calls,
+                                providing
                                 professional and courteous assistance to your customers
                             </td>
                         </tr>
                         <tr>
                             <td><i class="check-icon bi bi-check-circle-fill"></i></td>
                             <td>
-                                Equipped with hundreds of <span class="text-second">Direct Inward
-                                    Dialing
-                                    (DID)</span> numbers per state,
-                                facilitating a personalized and region-specific approach.
+                                <span class="fw-bolder">Diverse DID Options: </span>Equipped with hundreds of Direct
+                                Inward Dialing(DID) numbers per state, facilitating a personalized and region-specific
+                                approach.
                             </td>
                         </tr>
                         <tr>
                             <td><i class="check-icon bi bi-check-circle-fill"></i></td>
                             <td>
-                                Our scalable solution adapts to your evolving needs. Experience the
-                                flexibility to expand your operations without compromising on performance.
+                                <span class="fw-bolder">Scalability and Flexibility: </span>Our dialer is designed to
+                                grow with your business. Whether you are a
+                                startup or an established enterprise, our scalable solution adapts to your evolving
+                                needs.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="check-icon bi bi-check-circle-fill"></i></td>
+                            <td>
+                                <span class="fw-bolder">Reliability at its Core: </span>Reliability is non-negotiable in
+                                today's
+                                fast-paced business environment. Our dialer system is built with redundancy and failover
+                                mechanisms.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="check-icon bi bi-check-circle-fill"></i></td>
+                            <td>
+                                <span class="fw-bolder">Advanced Analytics: </span>Make informed decisions with our
+                                comprehensive
+                                analytics tools. Gain valuable insights into your call campaigns, track performance
+                                metrics.
                             </td>
                         </tr>
                     </table>
 
                 </div>
                 <div class="col-md-6 layer-3-2">
-                    <p class="call-center-service mt-4 h2">
+                    <p class="va-center-service mt-4 h2">
                         <!-- Virtual Assitants Service AREA -->
                         Virtual Assistants Services
                     </p>
@@ -172,25 +194,42 @@
                         <tr>
                             <td><i class="check-icon bi bi-check-circle-fill"></i></td>
                             <td>
-                                Employ industry-leading security measures protecting sensitive
-                                information, by encryption, secured storage, and access
-                                controls.
+                                <span class="fw-bolder">Data Security:</span> We employ industry-leading security
+                                measures to protect your sensitive
+                                information, including encryption, secure data storage, and access controls.
                             </td>
                         </tr>
                         <tr>
                             <td><i class="check-icon bi bi-check-circle-fill"></i></td>
                             <td>
-                                Our Virtual Assistants are adept at managing multiple tasks
-                                simultaneously, ensuring efficient
-                                operations and timely deliverables.
+                                <span class="fw-bolder">Personalized Assistance:</span> Your Virtual Assistant becomes
+                                an extension of your team,
+                                understanding your unique needs and providing tailored support.
                             </td>
                         </tr>
                         <tr>
                             <td><i class="check-icon bi bi-check-circle-fill"></i></td>
                             <td>
-                                Your Virtual Assistant becomes an extension of your team,
-                                understanding
-                                your unique needs and providing tailored support.
+                                <span class="fw-bolder">Time Optimization:</span> Delegate routine tasks to your Virtual
+                                Assistant, freeing up valuable
+                                time for strategic decision-making and important projects.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="check-icon bi bi-check-circle-fill"></i></td>
+                            <td>
+                                <span class="fw-bolder">Increased Efficiency:</span> Our Virtual Assistants are adept at
+                                managing multiple tasks
+                                simultaneously, ensuring efficient operations and timely deliverables.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="check-icon bi bi-check-circle-fill"></i></td>
+                            <td>
+                                <span class="fw-bolder">Cost-Effective Solution:</span> By outsourcing administrative
+                                tasks to our Virtual Assistants,
+                                you can reduce overhead costs associated with hiring and training additional staff.
+
                             </td>
                         </tr>
                     </table>
@@ -217,6 +256,58 @@
                     <img src="./img/Clients/Senior-Health-Desk.png" alt="Image 10">
                     <img src="./img/Clients/Spatial-Sauce.png" alt="Image 11">
                     <img src="./img/Clients/The-6th-Figure.png" alt="Image 12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIDDEN - CONTACT FORM -->
+    <div class="contactForm-container">
+        <!-- Contact Form Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header bg-first">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Send Us a Message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <label for="emailInput" class="form-label">First Name</label>
+                                    <input type="email" class="form-control" id="emailInput"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="emailInput" class="form-label">Last Name</label>
+                                    <input type="email" class="form-control" id="emailInput"
+                                        aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                            <form action="?" method="POST">
+                                <div class="g-recaptcha" data-sitekey="6LcP7McpAAAAADAhZS7c9YSa5ZwLS4OC3wd7Qjsm"></div>
+                                <br/>
+                                <input type="submit" value="Submit">
+                              </form>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
                 </div>
             </div>
         </div>

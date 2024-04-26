@@ -27,15 +27,15 @@ p {
     background-color: #aae23c;
 }
 
+.bg-second {
+    background-color: #547b05;
+}
+
 @font-face {
     font-family: 'Teko';
     src: url(../styles/fonts/Teko/Teko-Medium.ttf);
 }
 
-@font-face {
-    font-family: 'Teko Light';
-    src: url(../styles/fonts/Teko/Teko-Light.ttf);
-}
 
 @font-face {
     font-family: 'Poppins';
@@ -46,8 +46,3 @@ p {
     font-family: 'Poppins';
 }
 
-.teko-light{
-    font-family: Teko Light;
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
-}
