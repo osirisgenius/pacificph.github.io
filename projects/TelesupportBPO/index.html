@@ -269,6 +269,7 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header bg-first">
+                        <i class="tpicon bi bi-envelope-at-fill mx-2"></i>
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Send Us a Message</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -276,14 +277,14 @@
                         <form>
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="emailInput" class="form-label">First Name</label>
-                                    <input type="email" class="form-control" id="emailInput"
-                                        aria-describedby="emailHelp">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        aria-describedby="firstNameHelp">
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label for="emailInput" class="form-label">Last Name</label>
-                                    <input type="email" class="form-control" id="emailInput"
-                                        aria-describedby="emailHelp">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName"
+                                        aria-describedby="lastNameHelp">
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -292,12 +293,16 @@
                                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="inputPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="inputPassword">
-                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                              </div>
                             <div class="g-recaptcha" data-sitekey="6LcP7McpAAAAADAhZS7c9YSa5ZwLS4OC3wd7Qjsm"></div>
                             <br />
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1"><a href="">I agree to the terms and condition.</a></label>
+                              </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button class="btn btn-primary" id="captchaFormID" type="submit"

@@ -16,9 +16,14 @@ captchaForm.addEventListener('submit', (e)=>{
 
     const captchaResponse = grecaptcha.getResponse();
 
+    console.log(captchaResponse)
+
     if (!captchaResponse.length > 0 ){
         throw new Error("Captcha not completed")
     }
+
+    console.log(Error)
+    
 })
 
 // Slideshow
