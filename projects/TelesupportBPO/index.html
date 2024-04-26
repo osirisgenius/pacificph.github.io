@@ -296,17 +296,14 @@
                                 <label for="inputPassword" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="inputPassword">
                             </div>
-                            <form action="?" method="POST">
-                                <div class="g-recaptcha" data-sitekey="6LcP7McpAAAAADAhZS7c9YSa5ZwLS4OC3wd7Qjsm"></div>
-                                <br/>
-                                <input type="submit" value="Submit">
-                              </form>
-
+                            <div class="g-recaptcha" data-sitekey="6LcP7McpAAAAADAhZS7c9YSa5ZwLS4OC3wd7Qjsm"></div>
+                            <br />
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button class="btn btn-primary" id="captchaFormID" type="submit"
+                                    value="Submit">Send</button>
+                            </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>

@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const captchaForm = document.getElementById("captchaFormID")
+
+captchaForm.addEventListener('submit', (e)=>{
+    e.preventDefault()
+
+    const captchaResponse = grecaptcha.getResponse();
+
+    if (!captchaResponse.length > 0 ){
+        throw new Error("Captcha not completed")
+    }
+})
 
 // Slideshow
 
