@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-var recaptcha_response = ""
-
 const captchaForm = document.getElementById("captchaFormID")
 const captchaResult = document.getElementById("g-recaptcha-error")
 
