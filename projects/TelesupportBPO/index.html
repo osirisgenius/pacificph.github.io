@@ -274,7 +274,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form onsubmit="return submitSendMessageForm(event);">
+                        <form id="captchaFormID">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="firstName" class="form-label">First Name</label>
@@ -306,7 +306,7 @@
                               </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button class="btn btn-primary" id="captchaFormID" type="submit"
+                                <button class="btn btn-primary" type="submit"
                                     value="Submit">Send</button>
                             </div>
                         </form>
