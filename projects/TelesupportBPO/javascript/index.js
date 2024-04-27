@@ -19,11 +19,12 @@ function submitSendMessageForm(event){
 
     if(recaptcha_response.length == 0) {
         captchaResult.innerHTML = '<span style="color:red;">This field is required.</span>';
-        console.log("captcha" + recaptcha_response)
+
         return false;
     }
+}
 
-    console.log("captcha" + recaptcha_response)
-
-    document.getElementById('g-recaptcha-error').innerHTML = ''
+function verifyCaptcha(token) {
+    recaptcha_response = token;
+    document.getElementById('g-recaptcha-error').innerHTML = '';
 }
