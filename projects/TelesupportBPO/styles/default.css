@@ -35,6 +35,18 @@ p {
     background-color: #547b05;
 }
 
+.service-title{
+    margin-top: 50px;
+    font-size: 3rem;
+    color: white;
+}
+
+.service-desc{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
 @font-face {
     font-family: 'Teko';
     src: url(../styles/fonts/Teko/Teko-Medium.ttf);
