@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
 const captchaForm = document.getElementById("captchaFormID")
 const captchaResult = document.getElementById("g-recaptcha-error")
 
+var recaptcha_response = ''
+
 function submitSendMessageForm(event){
     event.preventDefault()
 
@@ -19,6 +21,8 @@ function submitSendMessageForm(event){
         captchaResult.innerHTML = '<span style="color:red;">This field is required.</span>';
         return false;
     }
+
+    console.log("captcha" + ecaptcha_response)
 
     document.getElementById('g-recaptcha-error').innerHTML = ''
 }
