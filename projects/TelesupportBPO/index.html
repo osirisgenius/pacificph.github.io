@@ -274,7 +274,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form method="post" onsubmit="return submitUserForm();">
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="firstName" class="form-label">First Name</label>
@@ -298,6 +298,7 @@
                                 <label for="floatingTextarea2">Comments</label>
                               </div>
                             <div class="g-recaptcha" data-sitekey="6LcP7McpAAAAADAhZS7c9YSa5ZwLS4OC3wd7Qjsm"></div>
+                            <div id="g-recaptcha-error"></div>
                             <br />
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1" required>

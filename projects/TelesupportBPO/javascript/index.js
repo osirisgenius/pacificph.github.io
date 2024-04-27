@@ -9,22 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const captchaForm = document.getElementById("captchaFormID")
+var recaptcha_response = ""
 
-captchaForm.addEventListener('submit', (e)=>{
+const captchaForm = document.getElementById("captchaFormID")
+const captchaResult = document.getElementById("g-recaptcha-error")
+
+function submitSendMessageForm(e) {
     e.preventDefault()
 
-    const captchaResponse = grecaptcha.getResponse();
-
-    console.log(captchaResponse)
-
-    if (!captchaResponse.length > 0 ){
-        throw new Error("Captcha not completed")
+    if(recaptcha_response.length == 0) {
+        captchaResult.innerHTML = '<span style="color:red;">This field is required.</span>';
+        return false;
     }
-
-    console.log(Error)
-    
-})
-
-// Slideshow
-
+    return true;
+}
