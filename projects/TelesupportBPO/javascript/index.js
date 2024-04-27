@@ -19,6 +19,7 @@ function submitSendMessageForm(event){
 
     if(recaptcha_response.length == 0) {
         captchaResult.innerHTML = '<span style="color:red;">This field is required.</span>';
+        console.log("captcha" + recaptcha_response)
         return false;
     }
 
