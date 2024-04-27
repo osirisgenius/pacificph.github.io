@@ -22,7 +22,7 @@ function submitSendMessageForm(event){
         return false;
     }
 
-    console.log("captcha" + ecaptcha_response)
+    console.log("captcha" + recaptcha_response)
 
     document.getElementById('g-recaptcha-error').innerHTML = ''
 }
