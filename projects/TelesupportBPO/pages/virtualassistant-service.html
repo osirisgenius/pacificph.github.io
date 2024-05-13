@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Call Center Service | TELESUPPORT </title>
+  <title>Virtual Assistant | TELESUPPORT </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="../img/company-icon.png">
@@ -28,16 +28,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
           <ul class="navbar-nav mb-4 my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 600px;">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Services
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Call Center Services</a></li>
-                <li><a class="dropdown-item" href="./virtualassistant-service.html">Virtual Assistants Services</a></li>
+                <li><a class="dropdown-item" href="../pages/callcenter-service.html">Call Center Services</a></li>
+                <li><a class="dropdown-item" href="#">Virtual Assistants Services</a></li>
                 <li><a class="dropdown-item" href="#">Website Development</a></li>
               </ul>
             </li>
@@ -56,25 +56,29 @@
   </header>
   <!-- FIRST LAYER -->
   <div class="row callcenter-title text-center d-flex">
-    <p class="service-title">Call Center Service</p>
-    <p class="service-desc poppins">Home > Services > <span class="text-first">Call Center Service</span> </p>
+    <div></div>
+    <p class="service-title" id="service-title">Virtual Assistant Service</p>
+    <p class="service-desc poppins">Home > Services > <span class="text-first">Virtual Assistant Service</span> </p>
   </div>
   <!-- SECOND LAYER -->
   <div class="container text-center my-4">
-    <h5>At TELESUPPORT, we take pride in providing cutting-edge solutions to elevate your business operations.</h5>
+    <h5>Our Virtual Assistant service provides you with a highly skilled professional assistant who can handle a wide
+      range of tasks</h5>
 
   </div>
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-4">
         <ul id="data-list" class="callcenter-list">
-          <li data-id="1" class=" active">Diverse DID Options<div class="hover-line"></div>
+          <li data-id="1" class=" active">Data Security<div class="hover-line"></div>
           </li>
-          <li data-id="2">Scalability and Flexibility<div class="hover-line"></div>
+          <li data-id="2">Personalized Assistance<div class="hover-line"></div>
           </li>
-          <li data-id="3">Reliability at its Core<div class="hover-line"></div>
+          <li data-id="3">Time Optimization<div class="hover-line"></div>
           </li>
-          <li data-id="4">Advanced Analytics<div class="hover-line"></div>
+          <li data-id="4">Increased Efficiency<div class="hover-line"></div>
+          </li>
+          <li data-id="5">Cost-Effective Solution<div class="hover-line"></div>
           </li>
         </ul>
         <div id="contact-container" class="contact-container">
@@ -88,13 +92,12 @@
       </div>
       <div class="col-md-8">
         <div id="service-content">
-          <img src="../img/callcenter-image/did-call.png" id="service-img" class="service-img" alt="Service Image">
+          <img src="../img/virtual-assistant-image/data-security.jpg" id="service-img" class="service-img" alt="Service Image">
           <div class="service-intro">
-            <p id="item-title">Direct Inward Dialing</p>
-            <p id="service-description" class="service-description">We understand the importance of localized communication. Our dialer is equipped
-              with hundreds of Direct Inward Dialing (DID) numbers per state, facilitating a personalized and
-              region-specific approach. This ensures that your operations are finely tuned to the unique requirements of
-              each state, fostering stronger connections with your audience.</p>
+            <p id="item-title"> Data Security</p>
+            <p id="service-description" class="service-description">We employ industry-leading security measures to
+              protect your sensitive information, including encryption,
+              secure data storage, and access controls.</p>
           </div>
         </div>
       </div>
@@ -159,7 +162,7 @@
     crossorigin="anonymous"></script>
   <script src="../javascript/index.js"></script>
   <script src="../javascript/jquery-3.7.1.min.js"></script>
-  <script src="../javascript//service-cc.js"></script>
+  <script src="../javascript//service-va.js"></script>
 </body>
 
 </html>

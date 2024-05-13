@@ -1,5 +1,80 @@
-.callcenter-title{
-    height: 200px;
-    background: url(../../img/call-center-service.jpg);
-    background-position: center;
+.callcenter-title {
+  width: auto;
+  background: url(../../img/call-center-service.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#service-img {
+  width: 700px;
+  height: 400px;
+  margin: 0px 10%;
+}
+
+.service-description{
+
+  font-size: 1rem;
+  font-family: poppins;
+}
+
+.service-intro{
+  margin: 5%;
+  font-size: 1.5rem;
+  font-family: 'Teko';
+}
+
+/* TABLE */
+
+
+
+.callcenter-list li {
+  font-size: 1.3rem;
+  padding: 20px 0;
+  border: 1px solid rgb(214, 214, 214);
+  padding-left: 20px;
+}
+
+.active {
+  color: #99d228;
+}
+
+.hover-line {
+  height: 4px;
+  background-color: #aae23c;
+  /* Change color as needed */
+  position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: width 1s ease-in;
+}
+
+.callcenter-list li:hover {
+  cursor: pointer;
+  color: #99d228;
+}
+
+.callcenter-list li:hover .hover-line {
+  width: 80%;
+}
+
+.contact-container{
+  margin-top: 50px;
+}
+
+
+.contact-icon{
+  font-size: 1.5rem;
+  color: #99d228;
+  margin-right: 25px;
+}
+
+.contact-list span{
+  font-size: 1.2rem;
+}
+
+.contact-list li {
+ margin: 10px 0 ;
 }
