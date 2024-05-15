@@ -1,9 +1,11 @@
+/* DEFAUT SERVICE PAGE CSS */
+@import url('../mediaquery/service.css');
+
 .callcenter-title {
   width: auto;
   background: url(../../img/call-center-service.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 #service-img {
@@ -12,13 +14,13 @@
   margin: 0px 10%;
 }
 
-.service-description{
+.service-description {
 
   font-size: 1rem;
   font-family: poppins;
 }
 
-.service-intro{
+.service-intro {
   margin: 5%;
   font-size: 1.5rem;
   font-family: 'Teko';
@@ -60,21 +62,39 @@
   width: 80%;
 }
 
-.contact-container{
+.contact-container {
   margin-top: 50px;
 }
 
 
-.contact-icon{
+.contact-icon {
   font-size: 1.5rem;
   color: #99d228;
   margin-right: 25px;
 }
 
-.contact-list span{
+.contact-list span {
   font-size: 1.2rem;
 }
 
 .contact-list li {
- margin: 10px 0 ;
+  margin: 10px 0;
 }
+
+.end-line {
+  background-color: #272c32;
+  background-repeat: no-repeat;
+
+
+}
+
+.end-line-img {
+  width: 250px;
+}
+
+.end-line-icon{
+  width: auto;
+  height: 40px;
+}
+
+/* ABOUT US PAGE */

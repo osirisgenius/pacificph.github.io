@@ -25,6 +25,8 @@ $(document).ready(function () {
     });
 });
 
+var x = window.matchMedia("(max-width: 575.98px)")
+
 // CALL CENTER DATA
 const dataList = [
     {
@@ -66,6 +68,8 @@ const contentTitle = document.getElementById("item-title");
 
 const dataListItems = document.querySelectorAll("#data-list li");
 
+
+
 dataListItems.forEach(item => {
     item.addEventListener("click", () => {
         // Remove the "active" class from all list items
@@ -78,9 +82,9 @@ dataListItems.forEach(item => {
 
         const itemId = parseInt(item.dataset.id);
         const selectedItem = dataList.find(data => data.id === itemId);
-        
+
         if (selectedItem) {
-            $("#service-content").fadeOut("slow", function() {
+            $("#service-content").fadeOut("slow", function () {
                 contentImage.src = selectedItem.image;
                 contentDescription.innerHTML = selectedItem.description;
                 contentTitle.innerHTML = selectedItem.title;
@@ -90,3 +94,29 @@ dataListItems.forEach(item => {
         }
     });
 });
+
+
+if (x.matches) {
+    dataListItems.forEach(item => {
+        const modalBodyContent = document.getElementById('modal-body-content');
+        const modal = new bootstrap.Modal(document.getElementById('callCenterService'));
+
+        item.addEventListener("click", () => {
+            // Remove the "active" class from all list items
+            dataListItems.forEach(otherItem => {
+                otherItem.classList.remove("active");
+            });
+
+            // Add the "active" class to the clicked item
+            item.classList.add("active");
+
+            const itemId = parseInt(item.dataset.id);
+            const selectedItem = dataList.find(data => data.id === itemId);
+
+            if (selectedItem) {
+                modal.show()
+            }
+        });
+    });
+}
+

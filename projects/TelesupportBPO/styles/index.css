@@ -2,6 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url(../styles/animations.css);
 @import url(../styles/mediaquery/indexmobile.css);
+@import url(../styles/pages-css/pages.css);
 
 .hide-inmob{
     visibility: hidden;
