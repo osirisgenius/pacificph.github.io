@@ -4,6 +4,7 @@
 @import url(../styles/mediaquery/indexmobile.css);
 @import url(../styles/pages-css/pages.css);
 
+
 .hide-inmob{
     visibility: hidden;
 }
