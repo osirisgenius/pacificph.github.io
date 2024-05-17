@@ -28,4 +28,20 @@
     .hide-inmobile {
         display: none;
     }
+    ul{
+        padding-inline-start: 0;
+    }
+
+    #service-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #service-img {
+        width: 300px !important;
+        height: 250px !important;
+        margin: 0px !important;
+        justify-content: center;
+    }
 }

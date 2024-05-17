@@ -25,8 +25,6 @@ $(document).ready(function () {
     });
 });
 
-var x = window.matchMedia("(max-width: 575.98px)")
-
 // CALL CENTER DATA
 const dataList = [
     {
@@ -94,29 +92,3 @@ dataListItems.forEach(item => {
         }
     });
 });
-
-
-if (x.matches) {
-    dataListItems.forEach(item => {
-        const modalBodyContent = document.getElementById('modal-body-content');
-        const modal = new bootstrap.Modal(document.getElementById('callCenterService'));
-
-        item.addEventListener("click", () => {
-            // Remove the "active" class from all list items
-            dataListItems.forEach(otherItem => {
-                otherItem.classList.remove("active");
-            });
-
-            // Add the "active" class to the clicked item
-            item.classList.add("active");
-
-            const itemId = parseInt(item.dataset.id);
-            const selectedItem = dataList.find(data => data.id === itemId);
-
-            if (selectedItem) {
-                modal.show()
-            }
-        });
-    });
-}
-
