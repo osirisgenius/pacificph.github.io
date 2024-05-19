@@ -1,6 +1,11 @@
 /* DEFAUT SERVICE PAGE CSS */
 @import url('../mediaquery/service.css');
 
+.page-holder{
+  position: relative;
+  top: 100px;
+}
+
 .callcenter-title {
   width: auto;
   background: url(../../img/call-center-service.jpg);
@@ -82,6 +87,7 @@
 }
 
 .end-line {
+  width: 100%;
   background-color: #272c32;
   background-repeat: no-repeat;
 

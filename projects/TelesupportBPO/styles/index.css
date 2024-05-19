@@ -14,6 +14,14 @@
     width: 250px;
 }
 
+.navbar{
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .navbar-brand{
     margin: 0 0 0 50px;
@@ -61,7 +69,7 @@ nav ul li:hover {
 }
 
 .layer-1 {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-image: url(../img/people-image.jpeg);
     background-position: center;
