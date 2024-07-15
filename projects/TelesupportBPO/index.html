@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../TelesupportBPO/img/company-icon.png">
     <link rel="stylesheet" href="../TelesupportBPO/styles/index.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                                         Services</a></li>
                                 <li><a class="dropdown-item" href="./pages/virtualassistant-service.html">Virtual
                                         Assistants Services</a></li>
-                                <li><a class="dropdown-item" href="#">Website Development</a></li>
+                                <li><a class="dropdown-item" href="./pages/websites.html">Website Development</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -278,24 +279,25 @@
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <label for="firstName" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstName"
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
                                         aria-describedby="firstNameHelp">
                                 </div>
                                 <div class="mb-3 col-md-6">
                                     <label for="lastName" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName"
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
                                         aria-describedby="lastNameHelp">
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="emailInput" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                <input type="email" name="emailInput" class="form-control" id="emailInput"
+                                    aria-describedby="emailHelp">
                                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
                                 </div>
                             </div>
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 150px"></textarea>
+                                    name="messageInput" style="height: 150px"></textarea>
                                 <label for="floatingTextarea2">Comments</label>
                             </div>
                             <div class="g-recaptcha" data-sitekey="6LdFwsgpAAAAAOVu_bnL7cyhWGk_5ByRZITyeaYR"
@@ -318,6 +320,42 @@
             </div>
         </div>
     </div>
+    <!-- MODAL SUCCESS -->
+    <div class="modal" tabindex="-1" id="modalSuccess">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- MODAL ERROR -->
+        <div class="modal" tabindex="-1" id="modalError">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Message Failed!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please email us directly at sales@telesupportbpo.com</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- FOOTER -->
     <div class="end-line text-center d-flex flex-column">
         <p class="service-title my-1">Contact Us</p>
